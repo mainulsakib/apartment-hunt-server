@@ -4,7 +4,8 @@ const bodyParser = require('body-parser');
 const app = express();
 const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectID;
-const uri = `mongodb+srv://mainulIslam:1234567890@cluster0.w1but.mongodb.net/rentHouse?retryWrites=true&w=majority`;
+
+
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 const port = 5000;
 app.use(cors())
